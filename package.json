@@ -1,0 +1,22 @@
+{
+  "name": "gestion-deportiva",
+  "version": "1.0.0",
+  "description": "Gestioná tus torneos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ingpabloiglesias/proyecto-anual.git"
+  },
+  "author": "Pablo Iglesias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ingpabloiglesias/proyecto-anual/issues"
+  },
+  "homepage": "https://github.com/ingpabloiglesias/proyecto-anual#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

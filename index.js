@@ -1,8 +1,26 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const path = require('path');
+const app = express();
+
+app.set('json spaces', 2); 
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'vistas'));
+
+/* Rutas API */
+
+const api = require('./rutas/api.js');
+app.use('/v1', api);
+
+/* Rutas admin */
+
+const instituciones = require('./rutas/instituciones');
+app.use('/instituciones', instituciones);
+
+const competencias = require('./rutas/competencias');
+app.use('/competencias', competencias);
 
 app.get('/', function(req, res) {
-  res.send('Hola Chico!');
+  res.render('index', { titulo: 'Gestión de Torneos', descripcion: 'Ingrese sus datos' });
 });
 
 app.listen(3000, function() {

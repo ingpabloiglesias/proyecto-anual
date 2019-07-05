@@ -1,14 +1,14 @@
 # proyecto-anual
 Gestión de torneos deportivos
 
-##Inicializar
+## Inicializar
 ```
 clonar el repo
 cd nombre-carpeta
 npm install
 ```
 
-##Ejecutar servidor dev
+## Ejecutar servidor dev
 ```
 npm run dev
 ```
